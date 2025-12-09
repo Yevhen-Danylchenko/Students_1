@@ -2,7 +2,7 @@
 
 namespace Students.Services
 {
-    public class IStudentRepository
+    public interface IStudentRepository
     {
         void AddStudent(Student student);
         IEnumerable<Student> GetAllStudents();

@@ -18,6 +18,9 @@ namespace Students.Services
             }
 
             students.Add(student);
+
+            Directory.CreateDirectory(Path.GetDirectoryName(_filePath)!);
+
             File.WriteAllText(_filePath, JsonSerializer.Serialize(students, new JsonSerializerOptions { WriteIndented = true }));
         }
 
