@@ -1,5 +1,5 @@
-using StudentApp.Services;
-using StudentApp.Services;
+using Students.Services;
+
 
 namespace Students
 {
