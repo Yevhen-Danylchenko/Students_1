@@ -1,4 +1,5 @@
 ﻿@page
+@inject Students.Services.IWishService WishService
 @model Students.Pages.Students.CreateModel
 @{
     ViewData["Title"] = "Додати студента";
@@ -39,6 +40,9 @@
                         <div class="col-12 text-end">
                             <button type="submit" class="btn btn-success px-4">💾 Зберегти</button>
                             <a href="/" class="btn btn-secondary ms-2">⬅ Назад</a>
+                        </div>
+                        <div class="alert alert-info mt-3">
+                            🎁 Побажання для тебе: <strong>@WishService.GetRandomWish()</strong>
                         </div>
                     </form>
                 </div>

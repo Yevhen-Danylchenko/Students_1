@@ -17,6 +17,8 @@ namespace Students
             // Репозиторій файлів
             builder.Services.AddSingleton<IStudentRepository, FileStudentRepository>();
 
+            builder.Services.AddSingleton<IWishService, WishService>();
+
             var app = builder.Build();
 
             // Мінімальна безпека/помилки

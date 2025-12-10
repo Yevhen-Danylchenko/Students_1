@@ -10,5 +10,17 @@
     "Age": 51,
     "Group": "PV413",
     "IsGrade": true
+  },
+  {
+    "Name": "Vlad",
+    "Age": 30,
+    "Group": "PV413",
+    "IsGrade": true
+  },
+  {
+    "Name": "Olena",
+    "Age": 45,
+    "Group": "PV413",
+    "IsGrade": true
   }
 ]
